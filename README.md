@@ -21,6 +21,8 @@ Este es un proyecto desarrollado en Python que utiliza la biblioteca Streamlit p
 - **dataset_inquilinos.csv**: Archivo CSV que contiene los datos de los inquilinos.
   
 - **logica.py**: Contiene la lógica principal del proyecto, incluyendo la carga de datos, la codificación one-hot, el cálculo de la matriz de similitud y la búsqueda de inquilinos compatibles.
+  
+![metadatos](https://github.com/jhcaballerog/Habitaciones/assets/59881719/56a6ef26-4b3e-4af7-a212-4365908bd754)
 
 ## Uso
 
