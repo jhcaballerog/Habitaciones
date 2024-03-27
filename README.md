@@ -2,6 +2,8 @@
 
 Este es un proyecto desarrollado en Python que utiliza la biblioteca Streamlit para crear una aplicación web interactiva. La aplicación ayuda a encontrar compañeros de piso compatibles en función de ciertas características.
 
+![ezgif com-animated-gif-maker](https://github.com/jhcaballerog/Habitaciones/assets/59881719/488e040b-28a3-4428-ae74-1dc8ccf3e827)
+
 ## Funcionalidades
 
 - **Ingreso de Datos de Inquilinos Actuales**: Los usuarios pueden ingresar información sobre los inquilinos actuales en el piso, como sus horarios, preferencias de música, etc.
