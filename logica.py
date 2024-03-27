@@ -15,15 +15,16 @@ df.columns = [
 
 # 3. ONE HOT ENCODING
 # Realizar el one-hot encoding
-encoder = OneHotEncoder(sparse=False)
+encoder = OneHotEncoder()
 df_encoded = encoder.fit_transform(df)
+
 
 # Obtener los nombres de las variables codificadas después de realizar el one-hot encoding
 encoded_feature_names = encoder.get_feature_names_out()
 
 # 4. MATRIZ DE SIMILIARIDAD
 # Calcular la matriz de similaridad utilizando el punto producto
-matriz_s = np.dot(df_encoded, df_encoded.T)
+matriz_s = np.dot(df_encoded.toarray(), df_encoded.toarray().T)
 
 # Define el rango de destino
 rango_min = -100
@@ -35,6 +36,7 @@ max_original = np.max(matriz_s)
 
 # Reescalar la matriz
 matriz_s_reescalada = ((matriz_s - min_original) / (max_original - min_original)) * (rango_max - rango_min) + rango_min
+
 
 # Pasar a Pandas
 df_similaridad = pd.DataFrame(matriz_s_reescalada,
